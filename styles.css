@@ -1,0 +1,268 @@
+
+:root {
+    --ladrillo: rgb(240, 80, 0);   /* Color principal de acento */
+    --negro: #000000;              /* Negro institucional */
+    --blanco: #ffffff;             /* Blanco base */
+    --gris-texto: #333333;         /* Gris para textos */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Scroll suave entre secciones */
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.6;
+    color: var(--gris-texto);
+    background-color: var(--blanco);
+}
+
+
+
+header {
+    background-color: var(--blanco);
+    padding: 25px 10%;
+    position: sticky;      /* Se mantiene fijo al hacer scroll */
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--negro);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Cambio de color al pasar el mouse */
+nav a:hover {
+    color: var(--ladrillo);
+}
+
+
+.hero {
+    height: 100vh; /* Ocupa casi toda la pantalla */
+
+    /* Imagen con overlay oscuro para mejorar legibilidad */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1581092795362-dbe2d7b1a636?auto=format&fit=crop&w=1500&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: var(--blanco);
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    max-width: 900px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0 35px;
+    max-width: 700px;
+    opacity: 0.95;
+}
+
+
+.btn {
+    background-color: var(--ladrillo);
+    color: var(--blanco);
+    padding: 16px 36px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+/* Efecto hover del botón */
+.btn:hover {
+    background-color: rgb(200, 60, 0);
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 120px 10%;
+}
+
+/* Títulos de sección */
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    color: var(--negro);
+}
+
+/* Línea decorativa debajo del título */
+h2::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: var(--ladrillo);
+    display: block;
+    margin-top: 10px;
+}
+
+
+.info-section {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+}
+
+.info-img {
+    flex: 1;
+}
+
+.info-img img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.servicios {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    flex: 1;
+    padding: 50px 30px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: var(--ladrillo);
+    color: var(--blanco);
+    transform: translateY(-5px);
+}
+
+.grid {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.proyecto {
+    flex: 1;
+    height: 300px;
+    background-color: #ddd;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.03);
+}
+
+
+footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+
+@media (max-width: 1024px) {
+
+    /* Apilamos columnas */
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    section {
+        padding: 80px 5%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        max-width: 800px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        max-width: 800px;
+    }
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head>
+<meta charset="UTF-8"> <!-- Permite usar caracteres especiales como á, ñ, etc -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+<title>AVR Construcciones</title> 
+<link rel="stylesheet" href="styles.css"> <!-- Conecta el archivo CSS -->
+</head>
+
+<body> 
+
+<!-- ================= HEADER / MENU ================= -->
+
+<header class="header"> 
+    
+    <div class="container nav">
+
+        <div class="logo">AVR CONSTRUCCIONES SRL</div>
+
+        <ul class="menu">
+
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#trabajos">Trabajos en ejecución</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= PORTADA / HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1 class="hero-title">AVR CONSTRUCCIONES SRL</h1>
+
+        <p class="hero-subtitle">Construimos espacios que transforman</p>
+
+        <a href="#contacto" class="btn">Contactanos</a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SECCION NOSOTROS ================= -->
+
+<section id="nosotros" class="section">
+
+    <div class="container split">
+
+        <div>
+
+            <h2>Nosotros</h2> 
+
+            <p>
+                Somos una empresa de construcción e infraestructura con más de 10 años de trayectoria.
+                Iniciamos nuestras actividades en el sur del país, consolidándonos a través del
+                compromiso, la calidad técnica y el cumplimiento en cada proyecto.
+            </p>
+
+            <br>
+
+            <p>
+                Gracias a nuestra experiencia y crecimiento sostenido, hoy desarrollamos obras
+                tanto en el sur como en la Ciudad de Buenos Aires, ampliando nuestra capacidad
+                operativa y técnica para atender proyectos públicos y privados.
+            </p>
+
+            <br>
+
+            <p>
+                Trabajamos bajo estándares de planificación, control y eficiencia que garantizan
+                resultados sólidos, seguridad en obra y cumplimiento de plazos contractuales.
+            </p>
+
+            <br>
+
+            <ul style="margin-top:20px; line-height:1.8;">
+                <li><strong>+10 años</strong> de experiencia</li>
+                <li><strong>+200</strong> obras ejecutadas</li>
+                <li>Presencia en el sur del país y en Capital</li>
+                <li>Proyectos públicos y privados</li>
+            </ul>
+
+        </div>
+
+        <div>
+            <img src="img/obrero.jpeg" alt="Construcción">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SECCION SERVICIOS ================= -->
+
+<section id="servicios" class="section light"> 
+
+    <div class="container center">
+
+        <h2>Servicios</h2> 
+
+        <div class="cards">
+
+            <!-- TARJETA OBRA PUBLICA -->
+
+            <div class="card" data-images="publicreja.jpg, publicescuela.jpg, publicescue.jpg, publicrejamplia.jpg, publitech.jpeg, publitech2.jpeg, publirar.jpeg, publigalpon.jpeg">
+
+                <h3>Obra Pública</h3> 
+
+                <div class="card-hidden">
+                    <p>Construcciones y remodelaciones de espacios públicos.</p>
+                </div>
+
+            </div>
+
+
+            <!-- TARJETA OBRA PRIVADA -->
+
+            <div class="card" data-images="privcasaamplio.jpg, privcasapilet.jpg, privhabita.jpg, privhabita2.jpg, privhabita3.jpg, privescalera.jpg, privparrilla.jpg, priventanal.jpg, privbaño.jpg, priventanalpile.jpg, privconec.jpg, privcasa.jpg, privgob.jpg">
+
+                <h3>Obra Privada</h3>
+
+                <div class="card-hidden">
+                    <p>Infraestructura adaptada a cada necesidad.</p>
+                </div>
+
+            </div>
+
+
+            <!-- TARJETA INFRAESTRUCTURA -->
+
+            <div class="card" data-images="techo.jpg">
+
+                <h3>Infraestructura</h3>
+
+                <div class="card-hidden">
+                    <p>Remodelación de escuelas y jardines.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SECCION PROYECTOS ================= -->
+
+<section id="proyectos" class="section"> 
+
+    <div class="container center">
+
+        <h2>Proyectos destacados</h2>
+
+        <div class="proyectos-grid" id="proyectosGrid"></div>
+
+        <div class="pagination" id="pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- ================= SECCION TRABAJOS EN EJECUCION ================= -->
+
+<section id="trabajos" class="section">
+
+    <div class="container center">
+    
+        <h2>Trabajos en Ejecución</h2>
+        <div class="video-grid">
+            <div class="video-item">
+                <video class="work-video" muted loop playsinline>
+                    <source src="video/tuberia.mp4" type="video/mp4" autoplay muted>
+                </video>
+            </div>
+
+            <div class="video-item">
+                <video class="work-video" muted loop playsinline>
+                    <source src="video/videotecho.mp4" type="video/mp4" autoplay muted>
+                </video>
+            </div>
+
+            <div class="video-item">
+                <video class="work-video" muted loop playsinline>
+                    <source src="video/colegiogob.mp4" type="video/mp4" autoplay muted>
+                </video>
+            </div>
+
+            <div class="video-item">
+                <video class="work-video" muted loop playsinline>
+                    <source src="video/techo.mp4" type="video/mp4" autoplay muted>
+                </video>
+            </div>
+
+            <div class="video-item">
+                <video class="work-video" muted loop playsinline>
+                    <source src="video/cancha2.mp4" type="video/mp4" autoplay muted>
+                </video>
+            </div>
+
+            <div class="video-item">
+                <video class="work-video" muted loop playsinline>
+                    <source src="video/cancha.mp4" type="video/mp4" autoplay muted>
+                </video>
+            </div>
+
+        </div>
+    
+    </div>
+
+</section>
+
+<!-- ================= SECCION CONTACTO ================= -->
+
+<section id="contacto" class="section dark"> 
+
+    <div class="container center">
+
+        <h2>Contacto</h2>
+
+        <div class="contact-info">
+
+            <p>📧 administracion@avrconstrucciones.com.ar</p>
+            <p>📞 +54 9 11 4184 0563</p>
+
+        </div>
+
+        <div class="contact-buttons">
+
+            <a href="mailto:info@avrconstrucciones.com" class="btn-contact">
+                Enviar Email
+            </a>
+
+            <a href="tel:+5491112345678" class="btn-contact outline">
+                Llamar Ahora
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MODAL DE IMAGENES ================= -->
+
+<div id="modal" class="modal">
+
+    <span class="close-modal">&times;</span>
+
+    <span class="modal-prev" onclick="prevImage()">&#10094;</span>
+
+    <img id="modal-img" alt="Imagen proyecto">
+
+    <span class="modal-next" onclick="nextImage()">&#10095;</span>
+
+    <div id="modal-counter" style="
+        position:absolute;
+        bottom:40px;
+        color:white;
+        font-size:1rem;
+        font-weight:500;
+    "></div>
+
+</div>
+<!-- ================= MODAL DE VIDEOS ================= -->
+
+<div id="videoModal" class="modal">
+
+    <span class="close-video">&times;</span>
+
+    <span class="video-prev">&#10094;</span>
+
+    <video id="videoGrande" controls></video>
+
+    <span class="video-next">&#10095;</span>
+
+</div>
+
+
+<!-- BOTON VOLVER ARRIBA -->
+
+<a href="#" id="backToTop" class="back-to-top">↑</a>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -11,9 +11,13 @@ const proyectosData = [
     { img: "fondo.jpg", nombre: "Galpon // Proyecto privada" },
     { img: "publicreja.jpg", nombre: "Infraestructura // Proyecto publico" },
     { img: "publitech.jpeg", nombre: "Remodelación integral" }, 
-    /* { img: "publigalpon.jpeg", nombre: "Construcción comercial" },
-    { img: "proyecto8.jpg", nombre: "Centro educativo" },
-    { img: "proyecto9.jpg", nombre: "Proyecto urbano" } */
+    { img: "publigalpon.jpeg", nombre: "Construcción comercial" },
+    { img: "publicescuela.jpg", nombre: "Centro educativo" },
+    /* ========================={ img: "proyecto9.jpg", nombre: "Proyecto urbano" }, ========================= */
+    { img: "rejacas.JPG", nombre: "Escuela Nº7727 // Proyecto publico" },
+    { img: "galpon.jpg", nombre: "Galpon // Proyecto publico" },
+    /* ========================={ img: "rejacasfrent.jpg", nombre: "Escuela Nº7727 // Proyecto publico" }, ========================= */
+
 ];
 
 const proyectosGrid = document.getElementById("proyectosGrid");

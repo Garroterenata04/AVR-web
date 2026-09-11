@@ -22,6 +22,14 @@ body{
     line-height: 1.7;
 }
 
+#nosotros img{
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
 
 .container{
     width:94%;
@@ -106,7 +114,6 @@ body{
 }
 
 /* ================= HERO ================= */
-
 .hero{
     height:100vh;
     display:flex;
